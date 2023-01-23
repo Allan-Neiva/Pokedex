@@ -70,7 +70,7 @@
     background-color: #79A4FF;
 }
 
-.eletric {
+.electric {
     background-color: #FEE43C;
 }
 
@@ -136,6 +136,27 @@
 .pokemon .detail {
     display: flex;
     flex-direction: row;
+}
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.pagination button{
+    background-color: #7975D6;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    cursor: pointer;
+
 }
 
 @media screen and (min-width: 380px) {
