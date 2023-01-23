@@ -78,6 +78,7 @@
     background-color: #FAAEFF;
 }
 
+ 
 .pokemon {
     
     display: flex;
@@ -158,6 +159,15 @@
     cursor: pointer;
 
 }
+
+.buttonDetail{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 1rem;
+}
+
+
 
 @media screen and (min-width: 380px) {
     .pokemons {

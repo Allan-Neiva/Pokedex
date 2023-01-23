@@ -7,12 +7,14 @@ const limit = 12
 let offset = 0;
 
 
-
 function loadPokemonsItems(offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
         /*mapeou os pokemons da API, converteu em HTML e inclui no nosso html */
         const newHtml = pokemons.map((pokemon) => `
-         <li class="pokemon ${pokemon.type}" >
+        
+        <li class="pokemon ${pokemon.type}" >
+        <a href="details.html" target="_blank">
+        <button class="buttonDetail" type="button" href="details.html">
          <span class="number">#${pokemon.number}</span>
          <span class="name">${pokemon.name}</span>
          <div class="detail">
@@ -22,7 +24,9 @@ function loadPokemonsItems(offset, limit) {
              <img src="${pokemon.photo}"
                  alt="${pokemon.name}">
          </div>
-         </li>`).join('')
+         </button>
+         </a>
+         </>`).join('')
 
         pokemonList.innerHTML += newHtml
     })
